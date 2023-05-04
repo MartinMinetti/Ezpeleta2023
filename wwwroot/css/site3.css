@@ -1,0 +1,89 @@
+/* Texto animado del home */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+
+.text-animado{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+}
+
+.body-home{
+    display: flex;
+    justify-content: center;
+}
+
+.text-animado{
+    position: absolute;
+    top: 35%;
+    color: #fff;
+    text-transform: uppercase;
+    background-image:  linear-gradient(-250deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bgText 2.5s linear infinite;
+    font-size: 6em;
+}
+
+@keyframes bgText{
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Fondo del home */
+
+.fondo-home{
+	margin: 0;
+	min-height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,65)), url(../img/home3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+
+/* fondo de categoria, sub y serv */
+
+.fondo-index{
+    background: linear-gradient(-45deg, #104364, #afc0cf, #5b7b97, #afc0cf);
+    background-size: 400% 400% ;
+     animation: gradient 10s ease infinite;
+  }
+  
+  /* linear-gradient(-45deg, #2980b9, #6dd5fa, #F0F7FD, #4286f4) */
+  
+  @keyframes gradient{
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+  /* Tabla */
+
+  .botones-opc {
+    display: flex;
+    justify-content: center;
+  } 
+
+  thead{
+    background: #27373d;
+  }
+
+  .style-table{
+    border: 5px solid rgb(39, 55, 61) ;
+    box-shadow: 0 0 20px rgb(233, 233, 233);
+  }

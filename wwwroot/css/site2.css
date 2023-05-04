@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.text-nav{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    list-style: none;
+} 
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    background-color: #1b3039;
+}
+
+.logo{
+    display: flex;
+    align-items:  center;
+}
+
+.logo i{
+    color: rgb(2, 247, 255);
+    font-size: 28px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+
+.nabvar2{
+    display: flex; 
+    list-style: none;
+}
+
+.nabvar2 a{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0; 
+    margin: 0 30px;
+    transition: all .50s ease;
+    margin-top: 15px;
+}
+
+.nabvar2 a:hover{
+    color: rgb(2, 247, 255 ); 
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space;
+}
+
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.main a:hover{
+    color: rgb(2, 247, 255 ); 
+}
+
+.main button{
+    background-color: transparent;
+    border: none;
+
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+
+@media (max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .nabvar2 a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .nabvar2{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 230px;
+        height: 22vh;
+        background: #27373d;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .nabvar2 a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .nabvar2 a:hover{
+        color: rgb(2, 247, 255 ); 
+    }
+    .nabvar2.open{
+        right: 2%;
+    }
+}
+
+/* fin del navbar */
+
+
+

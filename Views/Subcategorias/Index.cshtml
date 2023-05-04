@@ -1,0 +1,75 @@
+@{
+    ViewData["Title"] = "Subcategorias";
+}
+
+
+<body class="fondo-index">
+
+
+<!-- Modal -->
+<div class="modal fade" id="Modal-subcategoria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="Titulo-Modal-Subrucategoria"></h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <input type="hidden" id="SubcategoriaID" value="0" />
+            <div class="form-group">
+              <label for="recipient-name" class="control-label">Descripción</label>
+              <input type="text" class="form-control" style="text-transform: uppercase;" autocomplete="off" required id="SubCategoriaNombre" onkeyup="this.value = this.value.toUpperCase()"/>
+              <p id="Error-SubcategoriaNombre"></p>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Categoria:</label>
+              @Html.DropDownList("CategoriaID", null, htmlAttributes: new { @class = "form-control" })
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" onclick="GuardarSubcategoria();" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <p class="tit-cat">Subcategorias</p>
+
+  <!-- Button trigger modal -->
+  <div class="mb-2">
+    <button type="button"  onclick="VaciarFormulario();" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#Modal-subcategoria"> 
+    Nueva Subcategoria
+    </button>
+  </div>
+
+  <br>
+
+  <table class="table style-table">
+    <thead class="text-white">
+      <tr>
+        <th>
+          Descripción
+        </th>
+        <th>
+          Categoria
+        </th>
+        <th class="botones-opc">Opciones</th>
+      </tr>
+    </thead>
+    <tbody id="tbody-subcategorias">
+    </tbody>
+  </table>
+
+</div>  
+
+</body>
+
+
+
+@section Scripts{
+    <script src="~/js/subcategoria-1.0.1.js"></script>
+}

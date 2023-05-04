@@ -1,0 +1,144 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.tit-cat{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 70px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+/* log in */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #1b3039;
+}
+
+.login-header {
+  background:#1b3039;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.color-btn{
+  background:#1b3039;
+}
+
+.forget{
+  margin: -15px 0 15px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+}
+.forget label input{
+  margin-top: 6px;
+  margin-right: 7px;
+}
+
+.forget a{
+  color: rgb(0, 0, 0);
+}
+
+.olvidaste a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.olvidaste a:hover{
+  text-decoration: underline;
+}
+
+.imglog{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.253), rgb(0, 0, 0)), url(../img/inicio.jpg);
+  background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.fondo-perfil{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.253), rgb(0, 0, 0)), url(../img/perfil.jpg);
+  background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+
+
+
