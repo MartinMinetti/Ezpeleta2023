@@ -12,7 +12,7 @@
     <h2 class="login-header">Bienvenido</h2>
 
     <form id="account" method="post" class="login-container" >
-      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+     
       
       <div class="form-floating">
         <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
@@ -37,9 +37,10 @@
 
 
       <div><button id="login-submit" type="submit" class="w-100 btn btn-lg text-white color-btn">Iniciar sesión</button>
-  
       </div>
 
+       <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+       
       <p class="olvidaste">
           <a id="forgot-password" asp-page="./ForgotPassword">¿Olvidaste tu contraseña?</a>
       </p>
